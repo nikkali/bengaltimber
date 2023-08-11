@@ -50,7 +50,7 @@
         font-family:sans-serif;
         width:70%;
         height:80%;
-        border:3px solid black;
+        border:2px solid black;
         
     }
 	
@@ -68,7 +68,7 @@
         height:40%;
     display:flex;
     justify-content: space-between;
-   
+    
 
 
 }
@@ -116,14 +116,20 @@
         justify-content: space-between;
      }
      .content3img{
-        width:70%;
+        width:47%;
         display:flex;
         justify-content: space-between;
      }
+     .content3imgg{
+        width:50%;
+        display:flex;
+
+     }
      .content3 h5{
-        width:25%;
+        width:50%;
         display:flex;
         align-items: center;
+        justify-content: center;
      }
      .content4{
         height:30%;
@@ -147,6 +153,15 @@
       justify-content: center;
       width:100%;
      }
+     .content4text{
+        width:65%;
+        display:flex;
+     }
+     .content4text h5{
+        width:50%;
+        display:flex;
+        justify-content: center;
+     }
      .footer{
         height:33%;
         width:100%;
@@ -154,6 +169,102 @@
         justify-content: center;
         align-items: center;
      }
+     @media screen and (max-width:667px){
+        .header{
+            flex-direction: column;
+            
+        }
+        .main{
+		padding:5%;
+        height:100%;
+	}
+        .left-side{
+          width:100%;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .right-side{
+            width:100%;
+        }
+        .content1{
+            flex-direction: column;
+            height:auto;
+        }
+        .contentimg{
+            width:100%;
+            height:300px;
+        }.contentimg img{
+            height:90%;
+        }
+        .contenttext{
+            width:100%;
+            padding-top: 10px;
+
+        }
+        .content2{
+            flex-direction: column;
+            height:auto;
+        }
+        .content-list{
+            width:100%;
+        }
+        .contentimg2{
+            width:100%;
+            padding:0px;
+            
+        }
+        .content3{
+            flex-direction: column;
+            height:auto;
+        }
+        .content3img{
+            width:100%;
+            display:flex;
+           
+        }
+        .content3img img{
+            height:250px;
+        }
+        .content3imgg{
+            width:100%;
+            justify-content: center;
+           padding:10px 0px;
+            
+        }
+        .content3imgg img{
+            width:50%;
+        }
+        .content4{
+            display: flex;
+            flex-direction: column;
+            height:auto;
+        }
+        .content4img{
+            width:100%;
+        }
+        .content4text{
+            width:100%;
+            padding:0px 0px 8px 0px;
+        }
+        .content4text >h5{
+            width:50%;
+        }
+        .content4text >img{
+            width:50%;
+        }
+     } @media screen and (max-width:602px){
+        .main{
+            padding:9%;
+            height:100%;
+        }
+
+     }@media screen and (max-width:480px)
+     {.contenttext{
+        text-align:auto;}
+     }
+     
 </style>
 <body>
 <div class="main">
@@ -204,16 +315,18 @@ and	enhancement	of deer habitat.
        <h5 class="para2">FIREBREAK	DISCING,	HARROWING,	AND…..	</h5>
     <div class="content3">
         <div class="content3img">
-        <img src="img4.jpeg" width="60%" height="90%" >
-        <img src="img5.jpeg" width="30%" height="90%" >
+        <img class="img1"src="img4.jpeg" width="90%" height="90%" >
        
-    </div> <h5>…FIREBREAK	SEEDING</h5>
+       
+    </div>  <div class="content3imgg"> <img src="img5.jpeg" width="44%" height="90%" >
+    <h5>…FIREBREAK	SEEDING</h5></div> 
     
     </div>
     <div class="content4">
-        <img src="img6.jpeg" width="27%" height="90%" >
+        <div class="content4text">
+        <img src="img6.jpeg" width="35%" height="90%" >
         <h5>LIGHT	GRADING	&	HOMESTEAD	<br>
-            ROAD	IMPROVEMENT</h5>
+            ROAD	IMPROVEMENT</h5></div>
 		<div class="content4img">
 			<img src="img7.jpeg" width="100%" height="90%" >
 			<h5>DEBRIS	HANDLING</h5>
