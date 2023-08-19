@@ -1,386 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BENGAL TIMBER</title>
 </head>
 <style>
-     * , *:before, *:after{ 
-     box-sizing:border-box; 
-     -moz-box-sizing:border-box; 
-     -webkit-box-sizing:border-box; 
-     -ms-box-sizing:border-box;
-   }
-    body{
-       margin:0px;
-       font-family: sans-serif;
-       width:100%;
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -ms-box-sizing: border-box;
     }
-	h5{
-		margin:8px 0px;
-	}
-    body,html{
-        height:100%;
+
+    body {
+        margin: 0px;
+        font-family: sans-serif;
+        width: 100%;
+    }
+
+    h5 {
+        margin: 8px 0px;
+    }
+
+    body,
+    html {
+        height: 100%;
         box-sizing: border-box;
     }
-	.main{
-		margin: auto;
-        height:100%;
-       width:1200px;
-	}
-    .header{
-		width:1200px;
-        border-bottom:6px solid black; 
-        display:flex;
-        padding-bottom:0px;
+
+    .main {
+        margin: auto;
+        height: 100%;
+        width: 1200px;
+    }
+
+    .header {
+        width: 1200px;
+        border-bottom: 6px solid black;
+        display: flex;
+        padding-bottom: 0px;
         align-items: center;
     }
-   
-    .left-side{
-		width:350px;
-		height:80%;
-		float:left;
-		padding:6px;
+
+    .left-side {
+        width: 350px;
+        height: 80%;
+        float: left;
+        padding: 6px;
         position: relative;
     }
-    .left-side p{
+
+    .left-side p {
         font-family: sans-serif;
     }
-    
-    .right-side{
-		float:right;
-        display:flex;
+
+    .right-side {
+        float: right;
+        display: flex;
         flex-direction: column;
-        color:white;
+        color: white;
         background-color: rgb(68, 115, 196);
-		justify-content: center;
-		align-items: center;
-        font-family:sans-serif;
-        width:850px;
-        height:80%;
-        border:2px solid black;
-        
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        width: 850px;
+        height: 80%;
+        border: 2px solid black;
+
     }
-	
-	
-    .box2{
-		width:1200px;
-        
-       text-align: right;
+
+
+    .box2 {
+        width: 1200px;
+
+        text-align: right;
 
 
     }
-    
-    .hdng{
+
+    .hdng {
         font-weight: bold;
     }
-    .hdng1{
-        font-size: 22px;
-        
+
+    .content1 {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
     }
-    .content1{width:1200px;
-        
-    display:flex;
-    justify-content: space-between;
-    
+
+    .para2 {
+        padding: 17px 0px 17px 0px;
+    }
+
+    .content1 p {
+        font-size: 18px;
+    }
+
+    .contentimg {
+        width: 340px;
+        height: 215px;
+
+    }
+
+    .contenttext {
+        width: 810px;
 
 
-}.para2{
-    padding:17px 0px 17px 0px;
-}
-.content1 p{
-    font-size: 18px;;
-}
-   .contentimg{ width:340px;
-        height:215px;
-    
-     }
-     .contenttext{ width:810px;
-        
-     
-    text-align:justify;
-  display: flex;
-  align-items: flex-end;
-    font-size:20px;
-    float:bottom;
-    
-     }
-     
-     .content2{
-        width:1200px;
-        
-    display:flex;
-    padding:50px 0px 0px 0px;
-     }
-     .contentimg2{ width:300px;
-        height:180px;
-     float:right;
-     padding:10px;}
-     .contentimg2 h5{
+        text-align: justify;
+        display: flex;
+        align-items: flex-end;
+        font-size: 20px;
+        float: bottom;
+
+    }
+
+    .content2 {
+        width: 1200px;
+
+        display: flex;
+        padding: 50px 0px 0px 0px;
+    }
+
+    .contentimg2 {
+        width: 300px;
+        height: 180px;
+        float: right;
+        padding: 10px;
+    }
+
+    .contentimg2 h5 {
         margin-left: 0px;
-     }
-     .contentlist{ width:900px;
-        height:80%;
-     float:left;
-    
-    font-weight:bold;
-     }
-     .contentlist li{
-        line-height: 0.8;
-     }
-     .content3{
-       
-        width:1200px;
-        display:flex;
-        justify-content: space-between;
-     }
-     .content3img{
-        width:560px;
-        display:flex;
-        justify-content: space-between;
-     }
-     .content3imgg{
-        width:600px;
-        display:flex;
+    }
 
-     }
-     .content3 h5{
-        width:50%;
-        display:flex;
+    .contentlist {
+        width: 900px;
+        height: 80%;
+        float: left;
+
+        font-weight: bold;
+    }
+
+    .contentlist li {
+        line-height: 0.8;
+    }
+
+    .content3 {
+
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content3img {
+        width: 560px;
+        display: flex;
+        justify-content: space-between;
+        height: 175px;
+
+    }
+
+    .content3img img {
+        height: 158px;
+
+    }
+
+    .content3imgg {
+        width: 600px;
+        display: flex;
+
+    }
+
+    .content3 h5 {
+        width: 50%;
+        display: flex;
         align-items: center;
         justify-content: center;
-     }
-     .content4{
-        height:auto;
-        width:1200px;
-        display:flex;
+    }
+
+    .content4 {
+        height: auto;
+        width: 1200px;
+        display: flex;
         justify-content: space-between;
-     }
-     .content4 h5{
-        width:25%;
-        display:flex;
+    }
+
+    .content4 h5 {
+        width: 25%;
+        display: flex;
         align-items: center;
         text-align: center;
-     }
-     .content4img{
-        width:450px;
-        height:220px;
-        display:flex;
+    }
+
+    .content4img {
+        width: 450px;
+        height: 220px;
+        display: flex;
         flex-direction: column;
-     }
-     .content4img h5{
-      display: flex;
-      justify-content: center;
-      width:100%;
-     }
-     .content4text{
-        width:750px;
-        display:flex;
-        height:220px;
-        
-     }
-     .content4text h5{
-        width:50%;
-        display:flex;
+    }
+
+    .content4img h5 {
+        display: flex;
         justify-content: center;
-     }
-     .footer{
-        padding:20px 0px 20px 10px;
-        width:1200px;
+        width: 100%;
+    }
+
+    .content4text {
+        width: 750px;
+        display: flex;
+        height: 220px;
+
+    }
+
+    .content4text h5 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer {
+        padding: 20px 0px 20px 10px;
+        width: 1200px;
         display: flex;
         justify-content: center;
         align-items: center;
-     }
-     @media screen and (max-width:420px){
-        .header{
+    }
+
+
+    @media screen and (max-width:414px) {
+        .header {
             flex-direction: column;
-           
-		width:100%;
-        border-bottom:6px solid black; 
-        display:flex;
-        padding-bottom:0px;
-        align-items: center;
-    
-        }
-        .main{
-            height:100%;
             width: 100%;
-        }
-        .left-side{
-            width:100%;
-		height:80%;
-          display:flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-        }
-        .right-side{
-            width:100%;
-            height:80%;
-        }
-        .content1{
-            flex-direction: column;
-            height:auto;
-            width:100%;
-        }
-        .contentimg{
-            width:100%;
-            height:300px;
-        }.contentimg img{
-            height:90%;
-        }
-        .contenttext{
-            width:100%;
-           position: relative;
-           top:21px
+            border-bottom: 0px solid black;
+            display: flex;
+            padding-bottom: 0px;
+            align-items: center;
 
         }
-        .box2{
-            width:100%;
+
+        .main {
+            height: 100%;
+            width: 100%;
+            padding: 10% 10px;
+            font-size: 10px !important;
         }
-        .content2{
+
+        .left-side {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
-            height:auto;
-            width:100%;
+            padding-bottom: 10px;
         }
-        .contentlist{
-            width:100%;
+
+        .no-display {
+            display: none;
         }
-        .contentimg2{
-            width:100%;
-            padding:0px;
-            
+
+        .left-side img {
+            width: 250px;
         }
-        .content3{
+
+        .right-side {
+            width: 100%;
+            height: 80%;
+        }
+
+        .content1 {
             flex-direction: column;
-            height:auto;
+            height: auto;
             width: 100%;
         }
-        .content3img{
-            width:100%;
-            display:flex;
-           
+
+        .content1 p {
+            font-size: 10px;
+            text-align: justify;
         }
-        .para2{
-        margin-top: 22px;
-    }
-        .content3img img{
-            height:240px;
-            width:100%;
+
+        .contentimg {
+            width: 100%;
+            height: 237px;
         }
-        .content3imgg{
-            width:100%;
+
+        .contentimg img {
+            height: 90%;
+        }
+
+        .contenttext {
+            width: 100%;
+            position: relative;
+            top: 21px
+        }
+
+        .box2 {
+            width: 100%;
+        }
+
+        .content2 {
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+        }
+
+        .contentlist {
+            width: 100%;
+        }
+
+        .contentimg2 {
+            width: 100%;
+            padding: 0px;
+
+        }
+
+        .content3 {
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+        }
+
+        .content3img {
+            width: 100%;
+            display: flex;
+            height: auto;
+        }
+
+        .para2 {
+            margin-top: 22px;
+        }
+
+        .content3imgg {
+            width: 100%;
             justify-content: center;
-           padding:10px 0px;
-            
+            padding: 10px 0px;
+
         }
-        .content3imgg img{
-            width:50%;
+
+        .content3imgg img {
+            width: 50%;
         }
-        .content4{
+
+        .content4 {
             display: flex;
             flex-direction: column;
-            height:auto;
-            width:100%;
+            height: auto;
+            width: 100%;
         }
-        .content4img{
-            width:100%;
+
+        .content4img {
+            width: 100%;
+            height: 200px;
         }
-        .content4text{
-            width:100%;
-            padding:0px 0px 8px 0px;
+
+        .content4text {
+            width: 100%;
+            padding: 0px 0px 8px 0px;
+            height: 130px;
         }
-        .content4text >h5{
-            width:50%;
+
+        .content4text>h5 {
+            width: 50%;
         }
-        .content4text >img{
-            width:50%;
+
+        .content4text>img {
+            width: 50%;
         }
-        .contenttext{
-        text-align: left;}
-        .content3img img{
-            height:210px;
-            
+
+        .contenttext {
+            text-align: left;
         }
-        .footer{
-            width:100%;
+
+        .content3img img {
+            width: 100%;
+            height: 130px;
+
+        }
+
+        .footer {
+            width: 100%;
             padding: 0px;
         }
-     }
-     
+    }
 
-     
+    @media screen and (max-width:390px) {
+        .main {
+            height: 100%;
+            width: 100%;
+            padding: 10% 10px;
+            font-size: 10px !important;
+        }
+
+        .contentimg {
+            width: 100%;
+            height: 218px;
+
+        }
+
+        .content3img {
+            width: 100%;
+            display: flex;
+
+
+        }
+
+        .content4img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .content4text {
+            width: 100%;
+            display: flex;
+            height: 130px;
+        }
+
+    }
 </style>
+
 <body>
-<div class="main">
-<div class="header">
-    <div class="left-side">
-		<img src="logo.png" width="200" height="100" >
-		<p style="margin:0px; font-size:13px">Foresty Mulching and Firebreak Maintainenance</p>
+    <div class="main">
+        <div class="header">
+            <div class="left-side">
+                <img src="logo.png" width="200" height="100">
+                <p style="margin:0px; font-size:13px" class="no-display">Foresty Mulching and Firebreak Maintainenance
+                </p>
+            </div>
+            <div class="right-side">
+                <h3>FORESTRY MULCHING AND FIREBREAK MAINTAINENANCE</h3>
+                <h5>SERVING HOMESTEADS IN MARION, WALTHALL AND LAMAR COUNTRIES</h5>
+                <h5>www.bengaltimber.com</h5>
+            </div>
+        </div>
+        <div class="box2">
+            <h3>BENGAL TIMBER AND HABITAT, LLC</h3>
+            <b>
+                <h5 class="hdng">107 Walter Payton Drive; Columbia, MS,39429</h5>
+            </b>
+            <h4 class="hdng2">C:404.312.4642</h4>
+            <p class="para">T:601.736.9661</p>
+        </div>
+        <div class="content1">
+            <div class="contentimg">
+                <img src="Img2.jpeg" width="100%" height="100%">
+                <h5>FORESTRY MULCHING</h5>
+            </div>
+            <div class="contenttext">
+                <p>
+                    Bengal Timber & Habitat, LLC was founded in 2015, but really started in 1972
+                    as a cattle ranch.The early 90’s brought a decision to devote energies to tree
+                    farming and wildlife habitat development with an eye towards improving private property. We
+                    specialize in maintenance of firebreaks, property roads,
+                    and enhancement of deer habitat.
+                </p>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="contentlist">
+                <h3>BENGAL TIMBER OFFER</h3>
+                <ul>
+                    <h3>
+                        <li>MULCHING</li>
+                    </h3>
+                    <h3>
+                        <li>GRAPPLING/DEBRIS HANDLING</li>
+                    </h3>
+                    <h3>
+                        <li>FIREBREAK DISCING/HARROW/SEEDING</li>
+                    </h3>
+                    <h3>
+                        <li>LIGHT GRADING</li>
+                    </h3>
+                </ul>
+            </div>
+            <div class="contentimg2">
+                <img src="Img3.jpeg" width="100%" height="100%">
+                <h5>DEBRIS HANDLING</h5>
+            </div>
+        </div>
+        <h5 class="para2">FIREBREAK DISCING, HARROWING, AND….. </h5>
+        <div class="content3">
+            <div class="content3img">
+                <img class="img1" src="img4.jpeg" width="90%">
+            </div>
+            <div class="content3imgg"> <img src="img5.jpeg" width="44%" height="90%">
+                <h5>…FIREBREAK SEEDING</h5>
+            </div>
+        </div>
+        <div class="content4">
+            <div class="content4text">
+                <img src="img6.jpeg" width="35%" height="90%">
+                <h5>LIGHT GRADING & HOMESTEAD <br>
+                    ROAD IMPROVEMENT</h5>
+            </div>
+            <div class="content4img">
+                <img src="img7.jpeg" width="100%" height="90%">
+            </div>
+
+        </div>
+        <div class="footer">
+            <img src="logo.png" width="300px" height="80%">
+        </div>
     </div>
-    <div class="right-side">
-		<h3>FORESTRY MULCHING AND FIREBREAK MAINTAINENANCE</h3>
-		<h5>SERVING HOMESTEADS IN MARION, WALTHALL AND LAMAR COUNTRIES</h5>
-		<h5>www.bengaltimer.com</h5>
-	</div>
-</div>
-    <div class="box2">
-       <h3 class="hdng1">BENGAL TIMBER AND HABITAT, LLC</h3>
-       <b><h5 class="hdng">107 Walter Payton Drive;	Columbia, MS,39429</h5></b>
-       <h4 class="hdng2">C:404.312.4642</h4>
-       <p class="para">T:601.736.9661</p>
-    </div>
-    <div class="content1">
-        <div class="contentimg">
-        <img src="Img2.jpeg" width="100%" height="100%" >
-        <h5>FORESTRY MULCHING</h5>
-    </div>
-    <div class="contenttext">
-        Bengal	Timber	& Habitat, LLC was	founded	in	2015, but really started in	1972	
-as	a	cattle	ranch.The	early	90’s brought a decision to devote energies to	tree	
-farming	 and wildlife habitat development with an eye towards improving	private	property.We	specialize in maintenance of firebreaks,	property	roads,	
-and	enhancement	of deer habitat.	
-    </div>
-       </div>
-       <div class="content2">
-        <div class="contentlist">
-        <h3>BENGAL TIMBER OFFER</h3>
-        <ul>
-            <h3><li>MULCHING</li></h3>
-            <h3><li>GRAPPLING/DEBRIS HANDLING</li></h3>
-            <h3><li>FIREBREAK DISCING/HARROW/SEEDING</li></h3>
-            <h3><li>LIGHT GRADING</li></h3>
-        </ul>
-    </div>
-    <div class="contentimg2">
-        <img src="Img3.jpeg" width="100%" height="100%" >
-        <h5>DEBRIS HANDLING</h5>
-    </div>
-       </div>
-       <h5 class="para2">FIREBREAK DISCING,	HARROWING, AND…..	</h5>
-    <div class="content3">
-        <div class="content3img">
-        <img class="img1"src="img4.jpeg" width="90%" height="90%" >
-       
-       
-    </div>  <div class="content3imgg"> <img src="img5.jpeg" width="44%" height="90%" >
-    <h5>…FIREBREAK SEEDING</h5></div> 
-    
-    </div>
-    <div class="content4">
-        <div class="content4text">
-        <img src="img6.jpeg" width="35%" height="90%" >
-        <h5>LIGHT GRADING &	HOMESTEAD	<br>
-            ROAD IMPROVEMENT</h5></div>
-		<div class="content4img">
-			<img src="img7.jpeg" width="100%" height="90%" >
-		</div>
-           
-    </div>
-    <div class="footer">
-        <img src="logo.png" width="300px" height="80%" >
-    </div>
-</div>
 </body>
+
 </html>
